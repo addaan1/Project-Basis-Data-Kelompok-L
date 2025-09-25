@@ -1,0 +1,207 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #f0f4f9, #d6e4f0);
+    min-height: 100vh;
+    display: flex;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 240px;
+    height: 100vh;
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-right: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+.sidebar .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 2rem;
+}
+
+.sidebar .logo img {
+    width: 40px;
+    height: 40px;
+}
+
+.sidebar .logo span {
+    font-size: 20px;
+    font-weight: 700;
+    color: #2e7d32;
+}
+
+.sidebar h4 {
+    font-size: 13px;
+    font-weight: 600;
+    color: #666;
+    margin: 1rem 0 0.5rem;
+    text-transform: uppercase;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 1rem;
+}
+
+.sidebar ul li a {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 15px;
+    border-radius: 12px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #333;
+    transition: all 0.3s ease;
+}
+
+.sidebar ul li a.active,
+.sidebar ul li a:hover {
+    background: linear-gradient(90deg, #FFC107, #FF9800);
+    color: #fff;
+    box-shadow: 0 4px 10px rgba(255, 152, 0, 0.3);
+}
+
+.sidebar ul li a i {
+    font-size: 18px;
+    color: inherit;
+}
+
+.sidebar .logout {
+    margin-top: auto;
+    background: #2e7d32;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    border-radius: 12px;
+    font-weight: 600;
+    text-align: center;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.sidebar .logout:hover {
+    background: #1b5e20;
+}
+
+/* Main Content */
+.main-content {
+    margin-left: 260px;
+    padding: 2rem;
+    width: calc(100% - 260px);
+}
+
+/* Glassmorphism Card */
+.card {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.card h2 {
+    margin-bottom: 1rem;
+    font-size: 22px;
+    color: #333;
+}
+
+/* Buttons */
+.btn-primary {
+    background: #2e7d32;
+    color: #fff;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background: #1b5e20;
+}
+
+.btn-warning {
+    background: #FFC107;
+    color: #333;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn-danger {
+    background: #E53935;
+    color: #fff;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* Alerts */
+.alert {
+    margin: 1rem 0;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.alert.success {
+    background: rgba(76, 175, 80, 0.2);
+    color: #2e7d32;
+    border-left: 4px solid #2e7d32;
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+table thead {
+    background: rgba(0, 0, 0, 0.05);
+}
+
+table th, table td {
+    text-align: left;
+    padding: 12px;
+    font-size: 14px;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+table tbody tr:hover {
+    background: rgba(0,0,0,0.05);
+}
